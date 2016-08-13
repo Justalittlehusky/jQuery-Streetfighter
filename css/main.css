@@ -16,7 +16,7 @@
     z-index: 1;
 }
 
-.Ryu{
+.ryu{
 	float: left;
 	width: 659px;
 	height: 494px;
@@ -54,6 +54,9 @@
   height: 90px;
   display: none;
   float: left;
-  position: absolute;
+  position: relative;
   z-index: 10;
+  top: 172px;
+  right: 125px;
+
 }
