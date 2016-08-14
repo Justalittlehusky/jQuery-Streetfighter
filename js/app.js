@@ -12,6 +12,8 @@
 */
 
 $(document).ready(function() {
+	intro();
+
 	$('.ryu').mouseenter(function() {
 		$('.ryu-still').hide();
 		$('.ryu-ready').show();
@@ -76,3 +78,20 @@ function rickrolled(){
 	$('#rickrolled')[0].load();
 	$('#rickrolled')[0].play();
 }
+
+function intro() {
+  $('.sf-title').fadeIn(3500, function() {
+    $('.sf-title').fadeOut(1000, function() {
+      $('.created-by').fadeIn(1500, function() {
+        $('.created-by').fadeOut(1000, function() {
+          $('.me').fadeIn(1500, function() {
+            $('.me').fadeOut(1500, function() {
+              $('.instructions').fadeIn(1000);
+            });
+          })
+        })
+      })
+    })
+  })
+}
+
