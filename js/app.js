@@ -48,6 +48,22 @@ $(document).ready(function() {
 	//Ryu returns to ready stance
 	})
 
+	$(document).keydown(function(e){
+		if (e.keyCode == 88){
+			rickrolled();
+			$('.ryu-still').hide();
+			$('.ryu-ready').hide();
+			$('.ryu-cool').show();
+		}
+	})
+		.keyup(function(e) {
+    if (e.keyCode == 88) {
+      $('.ryu-cool').hide();
+      $('.ryu-ready').hide();
+      $('.ryu-still').show();
+    }
+  });
+
 });
 
 function playHadouken(){
@@ -55,3 +71,8 @@ function playHadouken(){
 	$('#playHadouken')[0].load();
 	$('#playHadouken')[0].play();
 };
+function rickrolled(){
+	$('#rickrolled')[0].volume = 0.5;
+	$('#rickrolled')[0].load();
+	$('#rickrolled')[0].play();
+}

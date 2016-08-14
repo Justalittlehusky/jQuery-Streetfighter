@@ -6,33 +6,69 @@
  	background-color: black;
  }
 
+.intro-box{
+	box-sizing: border-box;
+	height: 500px;
+	float: right;
+	width: 600px;
+	padding-right: 40px;
+}
+
+.instructions{
+	width:100%;
+	display: block;
+	position: relative;
+}
+
+.instructions p{
+	width: 50%;
+	font-size: 30px;
+	line-height: 45px;
+	padding-top: 45px;
+}
+
+.instructions p + p{
+	margin-left: 150px;
+}
+
  .container{
  	background-color: white;
  	margin-top: 110px;
  	padding-left:100px;
- 	min-width: 1200px;
+ 	min-width: 1300px;
     height: 500px;
     position: relative;
     z-index: 1;
 }
 
-.ryu{
-	float: left;
-	width: 659px;
-	height: 494px;
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    zoom: 1
 }
 
-.hadukoen, .ryu-still, .ryu-ready, .ryu-throwing{
+.ryu{
+	float: left;
+}
+
+.hadukoen, .ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool{
 	background-repeat: no-repeat;
 }
 
-.ryu-still, .ryu-ready, .ryu-throwing{
+.ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool{
 	width: 659px;
 	height: 494px;
 }
 
-.ryu-ready, .ryu-throwing{
+.ryu-ready, .ryu-throwing, .ryu-cool{
 	display: none;
+}
+
+.ryu-cool{
+	background-image: url('../images/ryu-cool.gif'); 
 }
 
 .ryu-still{
@@ -60,3 +96,32 @@
   left: -212px;
 
 }
+
+.right{
+	text-align: right;
+}
+
+.left{
+	text-align: left;
+}
+
+.sf-title{
+	background-image: url('https://upload.wikimedia.org/wikipedia/en/e/e9/Street_Fighter_Logo.png');
+}
+
+.created-by{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
